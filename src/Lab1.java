@@ -20,7 +20,6 @@ public class Lab1 {
     private Numbers num1 = new Numbers();
 
     public static void main(String[] args) {
-        // TODO Auto-generated method stub
 
         Lab1 lab1 = new Lab1();
         lab1.displayMainMenu();
@@ -74,13 +73,16 @@ public class Lab1 {
                         break;
                     case 7:
                         System.out.println("Name of the file to read from:");
-
+                        String readFileName = input.next();
+                        num1.readFile(readFileName);
                         break;
                     case 8:
-
+                        System.out.println("Name of the file to save from:");
+                        String saveFileName = input.next();
+                        num1.saveFile(saveFileName);
                         break;
                     case 9:
-
+                        System.out.println("Bye bye");
                         break;
                     default:
                         break;

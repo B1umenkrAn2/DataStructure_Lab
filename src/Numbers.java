@@ -27,9 +27,8 @@ public class Numbers {
      * Default Constructor
      */
     public Numbers() {
-        // TODO Write code here to initialize a "default" array since this is the default constructor
         numItems = 0;
-        numbers = new Float[5];
+        numbers = new Float[1];
     }
 
     /**
@@ -38,7 +37,6 @@ public class Numbers {
      * @param size - Max size of the numbers array
      */
     public Numbers(int size) {
-        // TODO Write code here to initialize the numbers array of max 'size'
         numItems = 0;
         numbers = new Float[size];
     }
@@ -49,7 +47,7 @@ public class Numbers {
      * @param keyboard - Scanner object to use for input
      */
     public void addValue(Scanner keyboard) {
-        // TODO Write code here to add the values in the array
+
         if (numItems < numbers.length) {
 //			System.out.println("Enter value:");
             numbers[numItems] = keyboard.nextFloat();
@@ -67,25 +65,23 @@ public class Numbers {
      * @return float value that represents the average
      */
     public float calcAverage() {
-        // TODO Write code to return the average of the values in the array
-        if (numItems == 0) {
+        if (this.numItems == 0) {
             return (float) 0;
-        }
+        } else {
 
-        float sum;
-        float avg = 0;
-        for (int i = 0; i < numbers.length; i++) {
-            sum = +numbers[i];
+            float sum = 0f;
+            float avg = 0f;
+            for (int i = 0; i < numItems; i++) {
+                sum += numbers[i];
+            }
             avg = sum / numItems;
+            return avg;
         }
-
-        return avg;
     }
 
     @Override
     public String toString() {
         String s = "number are : \n";
-        // TODO Write code for an appropriate toString method
         if (numItems == 0) {
             return s;
 
@@ -104,61 +100,81 @@ public class Numbers {
 
     public void addMultipleValue(Scanner Keyboard, int valueNum) {
 
-        for (int i = 0; i < valueNum; i++) {
-            System.out.print("Enter value:");
-            addValue(Keyboard);
+        if (valueNum <= numbers.length - numItems) {
+
+            for (int i = 0; i < valueNum; i++) {
+                System.out.print("Enter value:");
+                addValue(Keyboard);
+            }
+
+        } else {
+            System.out.println("No room in array to add all values");
         }
     }
 
-    public void readFile() {
-		File output = new File("currentEmployee.emp");
-		try {
-			if (!output.exists()) {
-				output = new File("currentEmployee.emp");
-			}
-			FileOutputStream save1 = new FileOutputStream(output);
-			ObjectOutputStream oos = new ObjectOutputStream(save1);
-			ArrayList<Employee> currentEmployee = this.getEmployees();
-			oos.writeObject(currentEmployee);
-			System.out.println("employee saved !!");
-			oos.close();
-		} catch (FileNotFoundException ex) {
-			System.out.println("Can't find the file in this path!");
-			//TODO #1
-		} catch (IOException ex) {
-			System.out.println("Input error please try again ! ");
+    public void readFile(String fileName) {
+//        System.out.println(fileName);
+        try {
 
-		}
+            File readFile = new File("f:\\"+fileName);
 
-    }
+//            if (!input.ready()) {
+//                System.out.println("File can't be find !");
+//            }
+                Scanner scanFile = new Scanner(readFile);
+                int totalNum = Integer.parseInt(scanFile.next());
+                while (scanFile.hasNext()){
 
-    public void saveFile() {
+                    if ( totalNum<= numbers.length - numItems) {
+                        for (int i = 0; i < totalNum; i++) {
+                            numbers[numItems] = Float.parseFloat(scanFile.next());
+                            numItems++;
+                        }
 
-		File input = new File("currentEmployee.emp");
-		try {
-			if (!input.exists()) {
-				System.out.println("File can't be find !");
-			}
+                    } else {
+                        System.out.println("No room in array to add all values");
 
-			FileInputStream read1 = new FileInputStream(input);
-			ObjectInputStream ois = new ObjectInputStream(read1);
-			employees.addAll((ArrayList<Employee>) ois.readObject());
+                    }
+
+                }
 
 
-		} catch (EOFException ex) {
-			System.out.println("File load complete");
-			//TODO #3
-		} catch (FileNotFoundException ex) {
-			System.out.println("can't find the file check the path or file name !");
 
-		} catch (IOException ex) {
-			System.out.println("reading file error, Please try again !");
 
-		} catch (ClassNotFoundException ex) {
-			System.out.println("cant file the objcet in this file, Please check file or file path !");
 
-		}
+        } catch (FileNotFoundException ex) {
+            System.out.println("can't find the file check the path or file name !");
 
+        }
+
+}
+
+    public void saveFile(String filename) throws IOException {
+
+
+        FileWriter output = new FileWriter(filename);
+//        boolean newFile = output.createNewFile();
+        try {
+//            if (!newFile) {
+//                System.out.println("can't creat this file!");
+//            }
+
+
+            output.write(String.valueOf(numItems));
+            output.write("\n");
+            output.flush();
+            for (int i = 0; i < numItems; i++) {
+                output.write(numbers[i].toString());
+                output.write("\n");
+            }
+            System.out.println("lab2.txt !!");
+            output.close();
+        } catch (FileNotFoundException ex) {
+            System.out.println("Can't find the file in this path!");
+        } catch (IOException ex) {
+            System.out.println("Input error please try again ! ");
+
+        }
     }
 
 }
