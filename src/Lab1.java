@@ -9,7 +9,7 @@ import java.util.Scanner;
  * Course: CST8130 - Data Structures
  *
  * @author Linda Crane
- * @author Melissa Sienkiewiczw
+ * @author Melissa Sienkiewicz
  */
 public class Lab1 {
 
