@@ -116,7 +116,7 @@ public class Numbers {
 //        System.out.println(fileName);
         try {
 
-            File readFile = new File("f:\\"+fileName);
+            File readFile = new File(fileName);
 
 //            if (!input.ready()) {
 //                System.out.println("File can't be find !");

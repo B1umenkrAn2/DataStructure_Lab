@@ -2,11 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc897506-62de-4273-8fc5-452c5c35f4bf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/lab2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lab1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/lab1.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/Lab1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/Lab1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lab1/Numbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/Numbers.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Numbers.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -104,7 +99,7 @@
       <workItem from="1568204450078" duration="865000" />
       <workItem from="1568211493231" duration="4919000" />
       <workItem from="1568225353828" duration="5968000" />
-      <workItem from="1568237451116" duration="4317000" />
+      <workItem from="1568237451116" duration="4361000" />
     </task>
     <task id="LOCAL-00001" summary="lab 1">
       <created>1568211607659</created>
@@ -127,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1568213521690</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="lab 2">
+      <created>1568241820775</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1568241820775</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,7 +150,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="lab 1" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 1" />
+    <MESSAGE value="lab 2" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
