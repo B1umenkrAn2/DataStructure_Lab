@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fc897506-62de-4273-8fc5-452c5c35f4bf" name="Default Changelist" comment="" />
+    <list default="true" id="fc897506-62de-4273-8fc5-452c5c35f4bf" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/lab1.iws" beforeDir="false" afterPath="$PROJECT_DIR$/lab1.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/Lab1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/Lab1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lab1/Numbers.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lab1/Numbers.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Lab1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Lab1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Numbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Numbers.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +34,17 @@
     <select />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="lab1" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1QOEI0YQuC76EwR65EnMKQyvKOV" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="aspect.path.notification.shown" value="true" />
@@ -87,11 +100,49 @@
       <workItem from="1567633160981" duration="6656000" />
       <workItem from="1567707185310" duration="133000" />
       <workItem from="1568204450078" duration="865000" />
+      <workItem from="1568211493231" duration="4919000" />
     </task>
+    <task id="LOCAL-00001" summary="lab 1">
+      <created>1568211607659</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1568211607659</updated>
+    </task>
+    <task id="LOCAL-00002" summary="lab 1">
+      <created>1568213409317</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1568213409317</updated>
+    </task>
+    <task id="LOCAL-00003" summary="lab 1">
+      <created>1568213521690</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1568213521690</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="lab 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 1" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -100,11 +151,6 @@
           <url>file://$PROJECT_DIR$/src/Lab1.java</url>
           <line>25</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Lab1.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

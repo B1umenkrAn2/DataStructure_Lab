@@ -17,15 +17,13 @@ public class Lab1 {
      * @param args
      */
 
-    private  Numbers num1 = new Numbers();
+    private Numbers num1 = new Numbers();
 
     public static void main(String[] args) {
         // TODO Auto-generated method stub
 
-		Lab1 lab1 = new Lab1();
-		lab1.displayMainMenu();
-
-
+        Lab1 lab1 = new Lab1();
+        lab1.displayMainMenu();
 
 
     }
@@ -35,7 +33,7 @@ public class Lab1 {
         int choice;
         do {
 
-        try {
+            try {
 
                 System.out.println("Please select one of the following:");
                 System.out.println("1: Initialize a default array");
@@ -43,7 +41,10 @@ public class Lab1 {
                 System.out.println("3: Add value to the array");
                 System.out.println("4: Display values in the array");
                 System.out.println("5: Display the average of the values");
-                System.out.println("6: To Exit");
+                System.out.println("6: Enter multiple values");
+                System.out.println("7: Read values from file");
+                System.out.println("8: Save values to file");
+                System.out.println("9: To Exit");
                 System.out.print("SELECTION: ");
                 choice = input.nextInt();
 
@@ -52,33 +53,45 @@ public class Lab1 {
                         num1 = new Numbers();
                         break;
                     case 2:
+                        System.out.print("array size is : ");
                         int size = input.nextInt();
-                        System.out.println("array size is : ");
                         num1 = new Numbers(size);
                         break;
                     case 3:
-                        System.out.println("Enter value:");
+                        System.out.print("Enter value:");
                         num1.addValue(input);
                         break;
                     case 4:
                         System.out.println(num1.toString());
                         break;
                     case 5:
-                        System.out.println("Average is : "+num1.calcAverage());
+                        System.out.println("Average is : " + num1.calcAverage());
                         break;
                     case 6:
-                        System.out.println("bye bye");
+                        System.out.print("How many values do you wish to add?");
+                        int numForMutInput = input.nextInt();
+                        num1.addMultipleValue(input, numForMutInput);
+                        break;
+                    case 7:
+                        System.out.println("Name of the file to read from:");
+
+                        break;
+                    case 8:
+
+                        break;
+                    case 9:
+
                         break;
                     default:
                         break;
                 }
 
-        }catch (Exception e){
-            choice = 0;
+            } catch (Exception e) {
+                choice = 0;
 
-        }
+            }
 
-        } while (choice != 6);
+        } while (choice != 9);
     }
 
 
